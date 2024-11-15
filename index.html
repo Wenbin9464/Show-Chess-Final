@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show chess</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/chess.png">
+    <link rel="stylesheet" href="assets/css/galleria.css">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/img/chess.png"> -->
+</head>
+<body>
+    <header>
+        <!--  -->
+        <nav>
+            <ul>
+                <li><img src="assets/img/chess.png" alt="no"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#information">Chess</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container sec1">
+        <div class="list">
+            <div class="item active itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/rei.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="car-information">King's Pawn Game</p>
+                    <h2>Criado no século XV</h2>
+                    <p class="description">A Abertura do Peão do Rei, caracterizada pelo movimento 1.e4, é a primeira abertura documentada na história do xadrez. Este movimento foi popularizado no século 15, graças em parte ao trabalho dos primeiros pioneiros do xadrez como Lucena e Ruy López. </p>
+                    <a class="button1" href="#information">Saiba mais</a>
+                </div>
+            </div>
+            <div class="item  itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/rainha.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="car-information">Queen's Pawn Game</p>
+                    <h2>Criado no começo de século XX</h2>
+                    <p class="description">A abertura do peão da Dama, representada como 1.d4, é uma escolha procurada pelas brancas ao iniciar uma partida de xadrez. Esse movimento tático permite que as brancas afirmem o domínio sobre o centro, abrindo caminho para o desenvolvimento subsequente da peça. </p>
+                    <a class="button1" href="#information">Saiba mais</a>
+                </div>
+            </div>
+            <div class="item itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/bispo.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="car-information">English Opening</p>
+                    <h2>Criado por Howard Staunton</h2>
+                    <p class="description">É uma abertura de flanco onde as brancas avançam seu peão c duas casas em vez dos peões d ou e. A ideia por trás da Abertura Inglesa é tirar as pretas de sua defesa normal de 1.d4 e fazer a transição para linhas com as quais elas se sentem desconfortáveis. </p>
+                    <a class="button1" href="#information">Saiba mais</a>
+                </div>
+            </div>
+            <div class="item itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/cavalo.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="car-information">King's Indian Attack</p>
+                    <h2>Criado por Savielly Tartakower</h2>
+                    <p class="description">No Ataque Indiano do Rei, as brancas geralmente jogam para um ataque na ala do rei, geralmente depois de avançar o peão e para e5. A versatilidade e simplicidade desse esquema, combinadas com o poder potencial do ataque das brancas, tornaram o King's Indian Attack uma arma popular em quase todos os níveis do xadrez.</p>
+                    <a class="button1" href="#information">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="button" onclick="prevButton()">←</button>
+            <button id="next" class="button" onclick="nextButton()">→</button>
+        </div>
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="outro"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <div id="information" class="none"></div>
+    <!-- King's Pawn Game -->
+    <section class="cont-sec js jsNow">
+        <div class=" grid-one-content cont-inf">
+          <div class="arrows2">
+            <button id="prev" class="button" onclick="prevButton()">←</button>
+            <h2 class="grid-main-heading">King's Pawn Game</h2>
+            <button id="next" class="button" onclick="nextButton()">→</button>
+          </div>
+          
+          <img src="assets/img/ChessKing.jpeg" alt=""
+            onclick="openModal('assets/img/ChessKing.jpeg')">
+            <div class="grid">
+            <article>
+              <h3>Hístoria</h3>
+              <p>A Abertura do Peão do Rei, caracterizada pelo movimento 1.e4, é a primeira abertura documentada na história do xadrez. Este movimento foi popularizado no século 15, graças em parte ao trabalho dos primeiros pioneiros do xadrez como Lucena e Ruy López. </p>
+            </article>
+            <article>
+              <h3>Vantagem</h3>
+              <p>A abertura imediatamente coloca pressão no centro do tabuleiro, criando oportunidades para o jogador atacante ganhar espaço, desenvolver suas peças e controlar casas importantes no tabuleiro.</p>
+            </article>
+            <article>
+              <h3>Como Defende</h3>
+              <p>A abertura de peões do rei pode ser combatida de várias maneiras, uma delas sendo uma resposta simétrica com e5. Outra opção é desafiar o movimento b3 jogando d5 ou Nc6 para controlar o centro. Desenvolver peças menores e se preparar para o roque no lado da rainha pode ser uma estratégia eficaz.</p>
+            </article>
+          </div>
+          <div class="img-div">
+            <img src="assets/img/Caro-Kann-Defense.png" alt=""
+            onclick="openModal('assets/img/Caro-Kann-Defense.png')">
+            <img src="assets/img/king-gambit.png" alt=""
+            onclick="openModal('assets/img/king-gambit.png')">
+            <img src="assets/img/silian-def.png" alt=""
+            onclick="openModal('assets/img/silian-def.png')">
+            <img src="assets/img/france-def.png" alt=""
+            onclick="openModal('assets/img/france-def.png')">
+          </div>
+        </div>
+    </section>
+    <!-- Queen's Pawn Game -->
+    <section class="cont-sec jsNow">
+        <div class=" grid-one-content cont-inf">
+          <div class="arrows2">
+            <button id="prev" class="button" onclick="prevButton()">←</button>
+            <h2 class="grid-main-heading">Queen's Pawn Game</h2>
+            <button id="next" class="button" onclick="nextButton()">→</button>
+          </div>
+          <img src="assets/img/ChessQueen.jpeg" alt=""
+            onclick="openModal('assets/img/ChessQueen.jpeg')">
+            <div class="grid">
+            <article>
+              <h3>Hístoria</h3>
+              <p>No século XIX e no início do século XX, 1.e4 era de longe o movimento de abertura mais comum das Brancas (Watson 2006:87), enquanto as diferentes aberturas começando com 1.d4 eram consideradas um tanto incomuns e, portanto, classificadas juntas como "Jogo de Peões da Rainha".</p>
+            </article>
+            <article>
+              <h3>Vantagem</h3>
+              <p>A abertura do peão da rainha é mais adequada para pressão de longo prazo e métodos mais lentos e posicionais; embora, é claro, um ataque brusco também seja possível. Ganha espaço no centro com um peão que não pode ser facilmente desafiado.</p>
+            </article>
+            <article>
+              <h3>Como Defende</h3>
+              <p>As pretas podem contra-atacar essa abertura capturando em d4, abrindo o centro e gerando um contra-ataque. As pretas também podem atrasar o desenvolvimento de seu bispo para manter a tensão em d4.</p>
+            </article>
+          </div>
+          <div class="img-div">
+            <img src="assets/img/que-gambit.png" alt=""
+            onclick="openModal('assets/img/que-gambit.png')">
+            <img src="assets/img/que-grunfeld.png" alt=""
+            onclick="openModal('assets/img/que-grunfeld.png')">
+            <img src="assets/img/que-ind.png" alt=""
+            onclick="openModal('assets/img/que-ind.png')">
+            <img src="assets/img/que-londom.png" alt=""
+            onclick="openModal('assets/img/que-londom.png')">
+          </div>
+        </div>
+    </section>
+    <!-- English Opening -->
+    <section class="cont-sec jsNow">
+        <div class=" grid-one-content cont-inf">
+          <div class="arrows2">
+            <button id="prev" class="button" onclick="prevButton()">←</button>
+            <h2 class="grid-main-heading">English Opening</h2>
+            <button id="next" class="button" onclick="nextButton()">→</button>
+        </div>
+          <img src="assets/img/EnglishOpen.jpeg" alt=""
+            onclick="openModal('assets/img/EnglishOpen.jpeg')">
+            <div class="grid">
+            <article>
+              <h3>Hístoria</h3>
+              <p>O inglês deriva seu nome do principal mestre inglês do século XIX, Howard Staunton, que o jogou durante sua partida de 1843 com Saint-Amant e em Londres 1851, o primeiro torneio internacional.[5] Não inspirou os contemporâneos de Staunton e só pegou no século XX.</p>
+            </article>
+            <article>
+              <h3>Vantagem</h3>
+              <p>Embora tenha seu próprio estilo, a abertura é muito flexível e muitas vezes transpõe para outras linhas de abertura. O objetivo é aplicar pressão na casa central d5 sem comprometer o peão da rainha ou o peão do rei.</p>
+            </article>
+            <article>
+              <h3>Como Defende</h3>
+              <p>Existem várias aberturas de xadrez que ajudam você a combater as Aberturas Inglesas. Uma das mais populares é a Variação Inglesa do Rei. Nesta variação, as Pretas jogam 1e5 e assumem o controle total no centro. Esta é de longe a melhor abertura de xadrez.</p>
+            </article>
+          </div>
+          <div class="img-div">
+            <img src="assets/img/eng-def.png" alt=""
+            onclick="openModal('assets/img/eng-def.png')">
+            <img src="assets/img/eng2.png" alt=""
+            onclick="openModal('assets/img/eng2.png')">
+            <img src="assets/img/eng3.png" alt=""
+            onclick="openModal('assets/img/eng3.png')">
+            <img src="assets/img/eng4.png" alt=""
+            onclick="openModal('assets/img/eng4.png')">
+          </div>
+        </div>
+    </section>
+    <!-- King's Indian Attack -->
+    <section class="cont-sec jsNow">
+        <div class=" grid-one-content cont-inf">
+          <div class="arrows2">
+            <button id="prev" class="button" onclick="prevButton()">←</button>
+            <h2 class="grid-main-heading">King's Indian Attack</h2>
+            <button id="next" class="button" onclick="nextButton()">→</button>
+          </div>
+          <img src="assets/img/IndiaOpen.jpeg" alt=""
+            onclick="openModal('assets/img/IndiaOpen.jpeg')">
+            <div class="grid">
+            <article>
+              <h3>Hístoria</h3>
+              <p>O uso do Ataque Índia do Rei no nível de grande mestre foi originalmente um desdobramento do uso generalizado da Defesa Índia do Rei na década de 1950. À medida que os grandes mestres começaram a apreciar as vantagens de jogar a Defesa Índia do Rei com as Pretas, o uso do mesmo sistema que as Brancas, com um movimento extra na mão, inevitavelmente se tornou atraente.</p>
+            </article>
+            <article>
+              <h3>Vantagem</h3>
+              <p>Esta configuração é, na verdade, inspirada na Defesa Índia do Rei. As brancas posicionam suas peças da mesma forma que as pretas fariam naquela abertura, no entanto, a posição das pretas na KIA é frequentemente muito diferente da posição das brancas em uma Defesa Índia do Rei típica.</p>
+            </article>
+            <article>
+              <h3>Como Defende</h3>
+              <p>Dominar a arte de quebrar a King's Indian Attack envolve uma mistura de planejamento estratégico, consciência tática e flexibilidade. Ao entender e aplicar essas dicas, você estará melhor equipado para lidar com as complexidades da configuração da King's Indian e emergir vitorioso.</p>
+            </article>
+          </div>
+          <div class="img-div">
+            <img src="assets/img/ind1.png" alt=""
+            onclick="openModal('assets/img/ind1.png')">
+            <img src="assets/img/ind2.png" alt=""
+            onclick="openModal('assets/img/ind2.png')">
+            <img src="assets/img/ind3.png" alt=""
+            onclick="openModal('assets/img/ind3.png')">
+            <img src="assets/img/ind4.png" alt=""
+            onclick="openModal('assets/img/ind4.png')">
+          </div>
+        </div>
+    </section>
+    <!-- sobre nos -->
+    <div id="sobre"> </div>
+    <section class="intro main-bg form-sec">
+      <div class="margin intro-content">
+        <div class="intro-text-content">
+          <h2>Feedback</h2>
+          <p>Queria conversar com autor do site? Ou tem alguma problema com o site? 
+            <br>Comunica com o autor aqui.</p>
+        </div>
+        <div class="contact-form">
+          <form id="form">
+            <legend>Contact me</legend>
+          <fieldset class="form-grid form-div">
+            
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="from_name" id="from_name" placeholder="Seu primeiro nome">
+            </div>
+  
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="to_name" id="to_name" placeholder="Seu segundo nome">
+            </div>
+  
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="text" name="email" id="email" placeholder="Seu e-mail">
+            </div>
+  
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="8" placeholder="messagem"></textarea>
+            </div>
+  
+            <div class="form-group full-width">
+              <button type="submit">Send message</button>
+            </div>
+          
+          </fieldset>
+        </form>
+        </div>
+      </div>
+    </section>
+    <section  class="sobre-sec">
+      <div>
+        <a href="https://pt-br.facebook.com"><img src="assets/img/facebook_2168281.png" alt=""></a>
+        <a href="https://www.instagram.com"><img src="assets/img/instagram_4494468.png" alt=""></a>
+        <a href="https://br.linkedin.com"><img src="assets/img/linkedin_1384014.png" alt=""></a>
+        <a href="https://www.youtube.com"><img src="assets/img/social_10110418.png" alt=""></a>
+        <a href="https://web.whatsapp.com"><img src="assets/img/whatsapp_1384007.png" alt=""></a>
+      </div>
+      <div>
+        <a href="politica_privacidade.html"><p><strong>politica de privacidade</strong></p></a>
+        <br>
+        <a href="termos_condicao.html"><p><strong>termos e condicao</strong></p></a>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <p><span class="span"> &copy;</span> 2024 2°ano Sis. Wenbin n°39. Pixel art</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/galleria.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("IdaTVSA4q_-3PfXxM");
+            })();
+        </script>
+        <script>
+            document.getElementById('form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_e6pqbe7', 'template_yxlr442', this)
+                    .then(function () {
+                        alert('Email enviado com sucesso!');
+                    }, function (error) {
+                        alert('Erro ao enviar o email: ' + JSON.stringify(error));
+                    });
+            });
+        </script>
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage" alt="">
+      </div>
+</body>
+</html>
