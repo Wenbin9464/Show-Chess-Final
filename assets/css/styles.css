@@ -295,10 +295,10 @@ section .list .item.active .information{
     section .arrows{width: 90vw;}
     section .arrows button{width: 35px; height: 35px;}
     section .arrows button img{width: 1.5rem;}
-    section .indicators{width: 95vw; margin-top: 1rem;}
+    section .indicators{width: 95vw;}/*  margin-top: 1rem; */
     section ul{height: auto; right: 0%;}
     section ul li{width: 30px; height: 10px;}
-    .button1{margin-top: 130px;}
+    .button1{margin-top: 65px;}
 }
 
 
@@ -328,10 +328,10 @@ section .list .item.active .information{
     section .arrows{width: 90vw;}
     section .arrows button{width: 45px; height: 45px;}
     section .arrows button img{width: 1.5rem;}
-    section .indicators{width: 95vw; margin-top: 3.5rem;}
+    section .indicators{width: 95vw;}/*  margin-top: 3.5rem; */
     section ul{height: auto; right: 0%;}
     section ul li{width: 30px; height: 10px;}
-    .button1{margin-top: 130px;}
+/*     .button1{margin-top: 130px;} */
 }
 
 @media (min-width:768px) and (max-width:1023px) {
